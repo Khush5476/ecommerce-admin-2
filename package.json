@@ -2,6 +2,7 @@
   "name": "ecommerce-admin-2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "scripts": {
     "dev": "next dev",
     "build": "react-scripts build",
