@@ -83,7 +83,7 @@ function Categories({swal}){
                         <td></td>
                     </tr>
                 </thead>
-                    <tbody>
+                    {/* <tbody>
                     {categories.length > 0 && categories.map(category => (
                         <tr key={category._id}>
                             <td>{category.name}</td>
@@ -98,7 +98,7 @@ function Categories({swal}){
                             </td>
                         </tr>
                     ))}
-                    </tbody>
+                    </tbody> */}
             </table>
         </Layout>
 
