@@ -10,7 +10,7 @@
   "lint": "next lint"
 },
 
-  "dependencies": {
+"dependencies": {
   "@aws-sdk/client-s3": "^3.598.0",
   "@babel/core": "^7.25.2",
   "@babel/plugin-transform-dotall-regex": "^7.24.7",
@@ -28,14 +28,15 @@
   "multiparty": "^4.2.3",
   "next": "^14.2.4",
   "next-auth": "^4.24.7",
-  "react": "^17.0.2",
-  "react-dom": "^17.0.2",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
   "react-sortablejs": "^6.1.4",
   "react-spinners": "^0.13.8",
   "react-sweetalert2": "^0.5.2",
   "sortablejs": "^1.15.2",
   "typescript": "^4.9.5"
 },
+
 "devDependencies": {
   "eslint": "^8",
   "eslint-config-next": "14.2.4",
