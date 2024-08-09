@@ -32,7 +32,7 @@ export default function Home() {
             {/* Preview of the Home Page */}
             <div className="w-full h-[80vh] overflow-hidden rounded-lg border border-gray-300 shadow-md">
               <iframe
-                src="https://ecommerce-front-1-7q5w.vercel.app/"
+                src="https://ecommerce-admin-orcin.vercel.app/"
                 title="E-Commerce Home Page"
                 width="100%"
                 height="100%"
