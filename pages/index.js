@@ -34,7 +34,7 @@ export default function Home() {
               <iframe
                 src="https://ecommerce-front-1.vercel.app"
                 title="E-Commerce Home Page"
-                width="100%"
+                width="100%" 
                 height="100%"
                 style={{ border: 'none' }}
                 loading="lazy"
