@@ -8,14 +8,13 @@ export default function ProjectForm({
   _id,
   Title: existingTitle,
   Description: existingDescription,
-  Price: existingPrice,
   Images: existingImages,
   // category: assignedCategory,
 }) {
   const [Title, setTitle] = useState(existingTitle || '');
   const [Description, setDescription] = useState(existingDescription || '');
   // const [category, setCategory] = useState(assignedCategory || '');
-  const [Price, setPrice] = useState(existingPrice || '');
+  // const [Price, setPrice] = useState(existingPrice || '');
   const [Images, setImages] = useState(existingImages || []);
   const [goToProjects, setGoToProjects] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
@@ -30,7 +29,7 @@ export default function ProjectForm({
 
   async function saveProject(ev) {
     ev.preventDefault();
-    const data = { Title, Description, Price, Images };
+    const data = { Title, Description, Images };
     if (_id) {
       // Update
       await axios.put('/api/projects', { ...data, _id });
@@ -112,13 +111,6 @@ export default function ProjectForm({
         onChange={ev => setDescription(ev.target.value)}
         rows={5} // Adjust the height of the textarea
         className="textarea"
-      />
-      <label>Price (CAD)</label>
-      <input
-        type="number"
-        placeholder="Price"
-        value={Price}
-        onChange={ev => setPrice(ev.target.value)}
       />
       <button type="submit" className="btn-primary">Save</button>
     </form>

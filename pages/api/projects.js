@@ -19,9 +19,9 @@ export default async function handle(req, res){
     }
 
     if (method === 'POST') {
-        const {Title,Description,Price,Images} = req.body;
+        const {Title,Description,Images} = req.body;
         const projectDoc = await Project.create({
-        Title,Description,Price,Images
+        Title,Description,Images
         })
         res.json(projectDoc);
       }
@@ -29,8 +29,8 @@ export default async function handle(req, res){
       
 
     if (method === 'PUT'){
-    const {Title,Description,Price,Images,_id} = req.body;
-    await Project.updateOne({_id}, {Title,Description,Price,Images});
+    const {Title,Description,Images,_id} = req.body;
+    await Project.updateOne({_id}, {Title,Description,Images});
     res.json(true);
     }
 
